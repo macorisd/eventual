@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://practica-parcial3ingweb-server.vercel.app/api/$1" }
+  ]
+}
