@@ -25,7 +25,7 @@ async def get_eventos_nearby(
     fields: str | None = Query(None, description="Campos específicos a devolver"),
     sort: str | None = Query(None, description="Campos por los que ordenar, separados por comas"),
     offset: int = Query(default=0, description="Índice de inicio para los resultados de la paginación"),
-    limit: int = Query(default=10, description="Cantidad de eventos a devolver, por defecto 10")
+    limit: int = Query(default=30, description="Cantidad de eventos a devolver, por defecto 10")
 ):
     """Obtener eventos cercanos a una latitud y longitud específicas."""
 
@@ -62,7 +62,7 @@ async def get_eventos(
     fields: str | None = Query(None, description="Campos específicos a devolver"),
     sort: str | None = Query(None, description="Campos por los que ordenar, separados por comas"),
     offset: int = Query(default=0, description="\u00cdndice de inicio para los resultados de la paginaci\u00f3n"),
-    limit: int = Query(default=10, description="Cantidad de eventos a devolver, por defecto 10")
+    limit: int = Query(default=30, description="Cantidad de eventos a devolver, por defecto 10")
 ):
     """Obtener todos los eventos."""
 

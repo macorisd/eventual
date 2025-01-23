@@ -29,7 +29,7 @@ const ProfileDropdown = ({ id }) => {
   }, [id]);
 
   if (!userData) {
-    return null; // Podrías mostrar un loader aquí mientras se carga la información
+    return null;
   }
 
   return (
@@ -50,11 +50,6 @@ const ProfileDropdown = ({ id }) => {
         {userData.name}
       </button>
       <ul className="dropdown-menu" aria-labelledby="profileDropdown">
-        <li>
-          <Link className="dropdown-item" to={`/profile/${id}`}>
-            Ver Perfil
-          </Link>
-        </li>
         <li>
           <Link className="dropdown-item text-danger" to="/logout">
             Cerrar Sesión
