@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import "./LoginPage.css";
 import { useAuth } from "../../context/AuthContext";
 
 const LoginPage = () => {
